@@ -1,0 +1,35 @@
+{
+  "name": "@aiolimp/vite-plugin-mock",
+  "version": "0.1.0",
+  "description": "A simple mock plugin for Vite",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "aiolimp",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "plugin",
+    "mock",
+    "vite-plugin"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "vite": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0"
+  }
+}
